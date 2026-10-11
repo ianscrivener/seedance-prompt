@@ -1,229 +1,231 @@
-# 设备美学缺陷参数包
+# Equipment Aesthetic Defect Parameter Packs
 
-每个参数包可直接粘贴进提示词的"摄像风格"段，按需增删。核心原则：想要某种年代质感，就完整描述那个设备的物理缺陷，缺陷即真实。
+Each parameter pack can be pasted directly into the "Camera Style" section of a prompt, adding or removing as needed. Core principle: to achieve a certain era's texture, fully describe that equipment's physical defects — defects are realism.
 
-每个包分三部分：画面特征、操作特征、负面约束。
-
----
-
-## 1. 2000年代初消费级DV摄像机
-
-**适用**：家庭录像、朋友随拍、千禧年怀旧、韩日老社区题材
-
-画面特征：
-- 中等数字压缩伪影
-- 褪色的色彩，柔和的对比度
-- 轻微的传感器噪点
-- 轻微的滚动快门
-- 480p到轻微高清之间的分辨率感
-- 高光容易过曝，暗部发灰
-
-操作特征：
-- 强烈的手持抖动，不完美的构图
-- 频繁的自动对焦搜索
-- 镜头呼吸（对焦时视角轻微变化）
-- 在阳光和阴影间移动时的曝光波动
-- 偶尔的运动模糊
-- 变焦生硬，速度不均匀
-- 录制中途突然开始或结束
-
-负面约束：没有稳定。没有电影化的摄像机移动。没有现代色彩分级。
+Each pack has three parts: visual characteristics, operational characteristics, negative constraints.
 
 ---
 
-## 2. 80至90年代VHS家用摄像机
+## 1. Early 2000s Consumer DV Camcorder
 
-**适用**：童年录像、生日聚会、更旧的怀旧感、复古恐怖
+**Suitable for**: home video, casual friend recordings, millennium nostalgia, Korean/Japanese old neighborhood themes
 
-画面特征：
-- 明显的磁带噪点和扫描线
-- 色彩溢出（红色尤其容易晕开）
-- 底部时间码或日期戳（可指定格式如 "JAN 14 1993"）
-- 画面边缘轻微的几何畸变
-- 低分辨率，细节模糊
-- 磁带损伤造成的偶尔画面撕裂或跳帧
+Visual characteristics:
+- Moderate digital compression artifacts
+- Faded colors, soft contrast
+- Slight sensor noise
+- Slight rolling shutter
+- Resolution feel between 480p and mild HD
+- Highlights prone to blowout, shadows grayish
 
-操作特征：
-- 沉重机身带来的缓慢笨重移动
-- 手动变焦的顿挫感
-- 白平衡偏移（室内偏橙，室外偏蓝）
-- 逆光时人物完全剪影化
+Operational characteristics:
+- Strong handheld shake, imperfect composition
+- Frequent autofocus hunting
+- Lens breathing (slight FOV shift during focus)
+- Exposure fluctuation when moving between sunlight and shadow
+- Occasional motion blur
+- Zoom too aggressive, uneven speed
+- Recording abruptly starting or ending mid-shot
 
-负面约束：没有数字锐利感。没有稳定。没有高动态范围。
-
----
-
-## 3. 8mm/Super 8 胶片
-
-**适用**：更久远的家庭记忆、梦境感、婚礼老片、艺术短片
-
-画面特征：
-- 明显的胶片颗粒
-- 温暖偏黄或偏品红的色彩偏移
-- 画面边缘的暗角
-- 灰尘、毛发、划痕偶尔闪过
-- 18fps带来的轻微卡顿感
-- 过曝的高光呈现柔和的光晕
-
-操作特征：
-- 每段镜头很短（胶片昂贵，3到5秒就切）
-- 硬切，没有转场
-- 曝光靠估计，时对时错
-- 无声（胶片本身不录音）或后期配的环境音
-
-负面约束：没有同期声对白。没有平滑运镜。没有数字清晰度。
+Negative constraints: No stabilization. No cinematic camera movement. No modern color grading.
 
 ---
 
-## 4. 智能手机竖屏（2015年后）
+## 2. 1980s–90s VHS Home Camcorder
 
-**适用**：Vlog、社交媒体感、街头偶遇、当代日常
+**Suitable for**: childhood videos, birthday parties, older nostalgia, retro horror
 
-画面特征：
-- 9:16竖构图
-- 过度锐化和HDR处理感
-- 电子防抖造成的果冻效应
-- 暗光下的涂抹感降噪
-- 前置镜头的轻微广角畸变
+Visual characteristics:
+- Visible tape noise and scan lines
+- Color bleeding (red especially prone to bleeding)
+- Bottom timecode or date stamp (format can be specified, e.g., "JAN 14 1993")
+- Slight geometric distortion at frame edges
+- Low resolution, detail smearing
+- Occasional frame tearing or frame dropping from tape damage
 
-操作特征：
-- 单手持机的轻微倾斜
-- 走路时的上下浮动（电子防抖压制后仍残留）
-- 对着镜头说话的自拍视角切换
-- 手指偶尔擦过镜头边缘
-- 突然抬起或放下手机的开始与结束
+Operational characteristics:
+- Slow, cumbersome movement from heavy body
+- Jerky manual zoom
+- White balance drift (orange indoors, blue outdoors)
+- Subjects fully silhouetted when backlit
 
-负面约束：没有横屏。没有三脚架稳定。没有专业布光。
-
----
-
-## 5. GoPro / 运动相机
-
-**适用**：第一人称视角、运动、旅行、冒险感
-
-画面特征：
-- 超广角鱼眼畸变，边缘拉伸
-- 高饱和的默认色彩
-- 强光下的镜头眩光
-- 水滴或灰尘沾在镜头上
-
-操作特征：
-- 胸挂或头戴的第一人称视角
-- 剧烈但被电子增稳压制的震动
-- 呼吸和身体晃动传导到画面
-- 视角随头部转动突然甩动
-
-负面约束：没有第三人称跟拍。没有电影构图。没有慢动作（除非明确要求）。
+Negative constraints: No digital sharpness. No stabilization. No high dynamic range.
 
 ---
 
-## 6. 监控摄像头 / CCTV
+## 3. 8mm/Super 8 Film
 
-**适用**：悬疑、都市传说、客观记录感、伪纪录片
+**Suitable for**: older family memories, dreamlike feel, vintage wedding films, art shorts
 
-画面特征：
-- 固定高位俯视角
-- 低帧率（可写"每秒约10到15帧的顿挫感"）
-- 单色或低饱和色彩，夜间红外模式呈灰白
-- 角落的时间戳持续跳动
-- 低分辨率，人脸模糊难辨
+Visual characteristics:
+- Visible film grain
+- Warm yellowish or magenta color shift
+- Vignetting at frame edges
+- Dust, hair, scratches occasionally flashing through
+- Slight stutter from 18fps
+- Overexposed highlights呈现 soft halation
 
-操作特征：
-- 完全静止，或极缓慢的预设巡航转动
-- 无声
-- 人物不知道被拍摄，行为完全自然
+Operational characteristics:
+- Each shot very short (film is expensive, cuts at 3 to 5 seconds)
+- Hard cuts, no transitions
+- Exposure by estimation, sometimes right, sometimes wrong
+- Silent (film itself doesn't record audio) or post-dubbed ambient sound
 
-负面约束：没有摄影师存在。没有构图意识。没有声音。没有变焦跟随主体。
-
----
-
-## 7. 专业纪录片（手持电影机）
-
-**适用**：高质感纪实、人物特稿、社会观察
-
-画面特征：
-- 浅景深，主体清晰背景柔和
-- 自然光为主，宽容度高
-- 克制的调色，接近肉眼所见
-
-操作特征：
-- 有经验的手持，微晃但不失控
-- 跟焦偶尔慢半拍（保留这个不完美）
-- 长镜头耐心观察，不急于切换
-- 被摄者偶尔瞥向镜头又移开
-
-负面约束：没有摆拍感。没有采访灯光。没有戏剧化运镜。没有配乐驱动的剪辑节奏。
+Negative constraints: No sync-sound dialogue. No smooth camera movement. No digital clarity.
 
 ---
 
-## 8. 网络摄像头 / 视频通话
+## 4. Smartphone Vertical (post-2015)
 
-**适用**：疫情记忆、远程对话、屏幕录制感、亲密而低保真的交流
+**Suitable for**: vlog, social media feel, street encounters, contemporary daily life
 
-画面特征：
-- 720p以下的低清晰度
-- 压缩造成的块状伪影，网络波动时画面糊成马赛克
-- 顶光或屏幕光打在脸上的青白色
-- 固定机位，仰视或平视的笔记本视角
+Visual characteristics:
+- 9:16 vertical composition
+- Over-sharpening and HDR processing feel
+- Jelly effect from electronic stabilization
+- Smearing noise reduction in low light
+- Slight wide-angle distortion from front lens
 
-操作特征：
-- 音画偶尔不同步
-- 人物偶尔卡顿定格再恢复
-- 背景是真实的房间一角
+Operational characteristics:
+- Slight tilt from one-handed holding
+- Up-and-down bobbing while walking (residual after electronic stabilization suppression)
+- Selfie angle switching to talk to camera
+- Finger occasionally brushing lens edge
+- Sudden lifting or lowering of phone to start and end
 
-负面约束：没有专业收音。没有补光灯质感。没有运镜。
-
----
-
-## 9. 2003年翻盖手机摄像（CMOS低保真）
-
-**适用**：极度怀旧、千禧年初学生时代、赛博朋克低保真、暗角情绪短片
-
-画面特征：
-- 极低分辨率（176×144或320×240）
-- 严重JPEG压缩块状伪影，色块化严重
-- 色彩饱和度极端且偏色严重（通常偏蓝绿或偏品红）
-- 暗部几乎完全噪点糊死，无细节
-- 画面中央清晰度尚可，边缘急剧劣化
-- 固定数字变焦（非光学，裁切放大）
-- 超窄动态范围，高光纯白一片
-
-操作特征：
-- 单手持机，手臂伸直自拍或随意抓拍
-- 翻盖打开即拍，几乎没有延迟补偿
-- 快门时滞极长（按下到实际拍摄有0.5到1秒延迟）
-- 录像按一下开始，再按一下结束，没有预览确认
-- 对焦基本靠固定焦段，前后移动自身来"对焦"
-- 录制过程中镜头容易被手指或翻盖边缘遮挡
-- 电池低电量时的录音失真和帧率下降
-
-负面约束：没有清晰度。没有平滑运动。没有色彩准确度。没有变焦操作。
+Negative constraints: No horizontal orientation. No tripod stabilization. No professional lighting.
 
 ---
 
-## 设备包进阶用法
+## 5. GoPro / Action Camera
 
-### 缺陷不重复原则
-同一提示词时间轴中（5到7个镜头），每个镜头的摄像机缺陷类型不应重复。例如：
+**Suitable for**: first-person perspective, sports, travel, adventure feel
+
+Visual characteristics:
+- Ultra-wide fisheye distortion, edge stretching
+- High-saturation default colors
+- Lens flare in strong light
+- Water drops or dust on lens
+
+Operational characteristics:
+- Chest-mount or head-mount first-person perspective
+- Violent but electronically stabilized vibration
+- Breathing and body sway transmitted to frame
+- POV whipping suddenly with head turns
+
+Negative constraints: No third-person follow shot. No cinematic composition. No slow motion (unless explicitly requested).
+
+---
+
+## 6. Surveillance Camera / CCTV
+
+**Suitable for**: suspense, urban legends, objective recording feel, mockumentary
+
+Visual characteristics:
+- Fixed high-angle top-down view
+- Low frame rate (can write "stuttery feel of about 10 to 15 fps")
+- Monochrome or low-saturation color, grayscale IR mode at night
+- Timestamp in corner continuously ticking
+- Low resolution, faces blurry and hard to distinguish
+
+Operational characteristics:
+- Completely static, or very slow preset patrol rotation
+- Silent
+- People unaware of being filmed, behavior entirely natural
+
+Negative constraints: No camera operator present. No compositional intent. No sound. No zoom following subject.
+
+---
+
+## 7. Professional Documentary (handheld cinema camera)
+
+**Suitable for**: high-quality documentary, character features, social observation
+
+Visual characteristics:
+- Shallow depth of field, subject sharp, background soft
+- Primarily natural light, high dynamic range
+- Restrained color grading, close to what the eye sees
+
+Operational characteristics:
+- Experienced handheld, slight sway but controlled
+- Follow focus occasionally half a beat behind (keep this imperfection)
+- Patient long-take observation, no rush to cut
+- Subject occasionally glancing at camera then looking away
+
+Negative constraints: No posed feeling. No interview lighting. No dramatic camera movement. No music-driven editing rhythm.
+
+---
+
+## 8. Webcam / Video Call
+
+**Suitable for**: pandemic memories, remote conversations, screen-recording feel, intimate yet low-fidelity communication
+
+Visual characteristics:
+- Low clarity below 720p
+- Blocky compression artifacts, image turning to mosaic during network fluctuations
+- Top light or screen light casting blue-white on the face
+- Fixed camera position, laptop upward or eye-level angle
+
+Operational characteristics:
+- Audio/video occasionally out of sync
+- Person occasionally stuttering/freezing then recovering
+- Background is a real corner of a room
+
+Negative constraints: No professional audio recording. No fill light feel. No camera movement.
+
+---
+
+## 9. 2003 Flip Phone Camera (CMOS low-fidelity)
+
+**Suitable for**: extreme nostalgia, early millennium student life, cyberpunk lo-fi, vignette mood shorts
+
+Visual characteristics:
+- Extremely low resolution (176×144 or 320×240)
+- Severe JPEG compression blocky artifacts, heavy color blocking
+- Extreme color saturation with severe color cast (typically green-blue or magenta)
+- Shadows almost entirely noise-mushed, no detail
+- Center of frame acceptable clarity, edges degrade sharply
+- Fixed digital zoom (not optical, crop magnification)
+- Ultra-narrow dynamic range, highlights pure white
+
+Operational characteristics:
+- One-handed holding, arm extended for selfies or casual snaps
+- Flip open and shoot, almost no delay compensation
+- Very long shutter lag (0.5 to 1 second delay from press to actual capture)
+- Press once to start recording, press again to end, no preview confirmation
+- Focus basically fixed focal length, "focus" by moving body forward/backward
+- Lens easily blocked by finger or flip edge during recording
+- Recording distortion and frame rate drop at low battery
+
+Negative constraints: No clarity. No smooth motion. No color accuracy. No zoom operation.
+
+---
+
+## Advanced Usage of Equipment Packs
+
+### Defect Non-Repetition Principle
+
+Within the same prompt's timeline (5 to 7 shots), each shot's camera defect type should not repeat. For example:
 ```
-镜头1：自动对焦在前景背景间搜索  ← 对焦缺陷
-镜头2：构图偏离中心跟不上主体    ← 构图缺陷
-镜头3：跟拍晃动+运动模糊        ← 抖动缺陷
-镜头4：进入阴影时曝光波动        ← 曝光缺陷
-镜头5：镜头慢了半拍跟上动作      ← 反应延迟
-镜头6：自然的镜头呼吸和焦距漂移  ← 呼吸感
-镜头7：画面突然切到黑屏          ← 录制中断
-```
-
-### 自动对焦路径指定技术（效果翻倍的关键技巧）
-不要笼统写"自动对焦搜索"，要明确给出**对焦起点和终点**：
-```
-❌ 自动对焦反复搜索                    ← 模糊，模型随便处理
-✅ 自动对焦在她脸部和她手中的西瓜之间来回切换   ← 给出具体路径
-✅ 自动对焦从远处山影漂移到她后背再拉回远处     ← 三态切换
+Shot 1: Autofocus hunting between foreground and background  ← Focus defect
+Shot 2: Framing off-center, can't keep up with subject      ← Composition defect
+Shot 3: Follow-shot shake + motion blur                      ← Shake defect
+Shot 4: Exposure fluctuation when entering shadow            ← Exposure defect
+Shot 5: Camera half a beat behind the action                 ← Response lag
+Shot 6: Natural lens breathing and focal drift               ← Breathing feel
+Shot 7: Frame suddenly cuts to black                         ← Recording interruption
 ```
 
-### 选择策略
-- 7到8个镜头：选7种不同的缺陷类型各用一次
-- 4到6个镜头：选4到6种，优先用对焦、构图、抖动这些最"人类"的缺陷
-- 结尾镜头固定选择"录制中断切黑屏"，这是最具辨识度的DV收束方式
+### Autofocus Path Specification Technique (the key technique that doubles effectiveness)
+
+Don't vaguely write "autofocus hunting" — explicitly provide the **focus start and end points**:
+```
+❌ Autofocus repeatedly hunting                    ← Vague, model handles arbitrarily
+✅ Autofocus switching back and forth between her face and the watermelon in her hand   ← Provides specific path
+✅ Autofocus drifting from distant mountain shadows to her back then pulling back to distance     ← Three-state switching
+```
+
+### Selection Strategy
+- 7 to 8 shots: select 7 different defect types, each used once
+- 4 to 6 shots: select 4 to 6 types, prioritizing focus, composition, and shake — the most "human" defects
+- The ending shot should always use "recording interruption cut to black," the most identifiable DV closure method

@@ -1,6 +1,6 @@
 ---
 name: realistic-video-prompting
-description: 为AI视频生成模型（Seedance、Sora、Kling、Runway、Veo等）撰写真实感、去AI感、纪录片质感的结构化视频提示词。当用户想生成AI视频提示词、优化现有视频提示词、追求"真实感""家庭录像感""手机随拍感""DV感""监控录像感"的视频效果，或提到Seedance、文生视频、视频prompt时，务必使用此skill。即使用户只是描述了一个想拍的场景或氛围，也应使用此skill将其转化为完整提示词。
+description: Write realistic, de-AI-ified, documentary-quality structured video prompts for AI video generation models (Seedance, Sora, Kling, Runway, Veo, etc.). Use this skill whenever the user wants to generate AI video prompts, optimize existing video prompts, or pursue "realistic," "home video," "phone footage," "DV," or "surveillance camera" video effects, or mentions Seedance, text-to-video, or video prompts. Even if the user merely describes a scene or mood they want to shoot, use this skill to transform it into a complete prompt.
 version: 1.1.0
 author: zhouwei713
 license: MIT
@@ -9,105 +9,105 @@ metadata:
     tags: [ai-video, prompt, realistic-video, seedance, kling, veo, runway, sora]
 ---
 
-# 真实视频提示词生成器
+# Realistic Video Prompt Generator
 
-把用户的一个模糊想法（"我想要一段韩国社区的日常感视频"）转化为高密度、可执行、去AI感、像真实素材拍出来的结构化视频提示词。
+Transforms a vague idea from the user ("I want a video with the everyday feel of a Korean neighborhood") into a high-density, executable, de-AI-ified, structured video prompt that looks like real footage.
 
-## 核心哲学
+## Core Philosophy
 
-高质量视频提示词的本质是回答一个问题：**这段素材是谁、用什么设备、在什么年代、出于什么目的拍下来的？**
+The essence of a high-quality video prompt is answering one question: **Who shot this footage, with what equipment, in what era, and for what purpose?**
 
-一旦确定了"素材来源身份"，所有细节都能推导出来。2005年朋友随手拍的DV会抖、会失焦、会突然关机；2024年博主的手机竖屏会有美颜感、会对着镜头说话；90年代的监控摄像头没有声音、俯视角、低帧率。
+Once the "footage source identity" is established, all details can be derived. A DV casually shot by a friend in 2005 will be shaky, out of focus, and may suddenly turn off; a 2024 vlogger's vertical phone video will have a beauty-filter look and face-the-camera talking; a 90s surveillance camera has no audio, a top-down angle, and low frame rate.
 
-第二个关键认知：**AI模型有强烈的默认审美**（电影感运镜、完美构图、商业调色、干净画面）。想要真实感，必须用负面约束主动关闭这些默认行为，并在时间轴里植入"非完美事件"。
+The second key insight: **AI models have strong default aesthetics** (cinematic camera movement, perfect composition, commercial color grading, clean frames). To achieve realism, you must proactively disable these default behaviors with negative constraints and embed "imperfect events" into the timeline.
 
-## 工作流程
+## Workflow
 
-### 第一步：确定四要素（缺一不可）
+### Step 1: Establish the Four Essential Elements (all required)
 
-如果用户没有说清楚，先问这四个问题（可以合并成一次提问）：
+If the user hasn't been clear, ask these four questions (can be combined into a single inquiry):
 
-1. **拍摄者身份**：谁在拍？朋友、家人、路人、Vlogger、监控、纪录片摄制组、还是无人拍摄的固定机位？
-2. **设备与年代**：DV、VHS、8mm胶片、iPhone、GoPro、监控、专业电影机？哪个年代？
-3. **主体与场景**：拍谁？在哪？什么时间段？
-4. **情绪目标**：温暖怀旧、孤独疏离、紧张不安、平静治愈？
+1. **Shooter identity**: Who is filming? A friend, family member, passerby, vlogger, surveillance camera, documentary crew, or an unmanned fixed camera?
+2. **Equipment and era**: DV, VHS, 8mm film, iPhone, GoPro, surveillance, professional cinema camera? Which era?
+3. **Subject and scene**: Who is being filmed? Where? What time of day?
+4. **Emotional goal**: Warm nostalgia, lonely detachment, tense unease, calm healing?
 
-如果用户已经给出足够信息，直接推断并在输出前用一句话确认你的理解。
+If the user has already provided enough information, infer directly and confirm your understanding in one sentence before output.
 
-### 第二步：按七段式模板逐段生成
+### Step 2: Generate section by section using the seven-part template
 
-严格按以下顺序输出，每段独立成块，段间不混淆信息：
+Output strictly in the following order, each section as an independent block, with no information bleeding between sections:
 
 ```
-主要角色 → 地点 → 视觉风格 → 摄像风格 → 时间轴 → 音频 → 目标
+Main Character → Location → Visual Style → Camera Style → Timeline → Audio → Goal
 ```
 
-各段写作规则：
+Writing rules for each section:
 
-**1. 主要角色**
-- 只写可视化的具体特征：年龄段、妆容、每件衣物的颜色/材质/版型、鞋、配饰、发型细节（含碎发/刘海等小特征）
-- 禁用抽象形容词（时尚的、好看的、有气质的）
-- 加一句皮肤/质感描述（如"逼真的皮肤纹理"）
-- 加一句性格气质（用于驱动肢体语言）
-- **必须以一致性锁定句结尾**："在整个视频中保持一致的身份、服装、发型和外貌"
+**1. Main Character**
+- Only write visualizable concrete features: age range, makeup, color/material/fit of each clothing item, shoes, accessories, hairstyle details (including flyaway hair, bangs, and other small features)
+- No abstract adjectives (stylish, attractive, elegant)
+- Add one line of skin/texture description (e.g., "realistic skin texture")
+- Add one line of personality/temperament (to drive body language)
+- **Must end with a consistency lock sentence**: "Maintains consistent identity, clothing, hairstyle, and appearance throughout the entire video"
 
-**2. 地点**
-- 时间段 + 地域 + 场景类型开头
-- 罗列8到12个具体环境元素（盆栽、晾衣绳、电线杆、树影等），元素要能相互佐证同一个世界
-- 加光影动态描述（树影移动、云影掠过）
-- **以负面约束结尾**：排除模型爱加的商业元素（商店、广告、人群、咖啡馆）
+**2. Location**
+- Start with time of day + region + scene type
+- List 8 to 12 specific environmental elements (potted plants, clotheslines, utility poles, tree shadows, etc.); elements should mutually corroborate the same world
+- Add dynamic light/shadow descriptions (tree shadows moving, cloud shadows passing)
+- **End with negative constraints**: exclude commercial elements the model tends to add (shops, ads, crowds, cafes)
 
-**3. 视觉风格**
-- 用4到6个短语定义真实感层级：如"超现实主义纪录片真实感、真实的即兴行为、自然的肢体语言、无剧本的日常生活片段感、强烈的环境真实性"
+**3. Visual Style**
+- Define the realism level with 4 to 6 short phrases: e.g., "ultra-realistic documentary realism, authentic spontaneous behavior, natural body language, unscripted everyday slice-of-life feel, strong environmental authenticity"
 
-**4. 摄像风格**
-- 这是去AI感的核心段落。查阅 `references/camera-aesthetics.md`，选取对应设备的"缺陷参数包"完整写入
-- 原则：把设备美学翻译成6到10个具体物理现象（对焦搜索、曝光波动、滚动快门、压缩伪影等）
-- **必须以三连负面约束结尾**：没有稳定、没有电影化摄像机移动、没有现代色彩分级（按设备调整）
+**4. Camera Style**
+- This is the core section for de-AI-ifying. Consult `references/camera-aesthetics.md`, select the matching equipment's "defect parameter pack" and write it in completely
+- Principle: translate the equipment aesthetic into 6 to 10 specific physical phenomena (focus hunting, exposure fluctuation, rolling shutter, compression artifacts, etc.)
+- **Must end with a triple negative constraint**: no stabilization, no cinematic camera movement, no modern color grading (adjust per equipment)
 
-**5. 时间轴**
-- 总长10到15秒，切5到7个镜头，每镜头2到3秒，用 `00:00–00:02` 格式
-- 每个镜头包含三层：主体动作 + 环境呼应（风、光、动物、路人）+ **一个非完美事件**
-- 非完美事件从 `references/anti-ai-checklist.md` 的清单中选取，且7个镜头里不重复使用同一种
-- 动作之间要有生活逻辑链（坐着 → 走进小巷 → 遇到猫 → 晾衣服），别写成互不相关的镜头拼贴
-- **结尾必须有收束方式**：突然切黑（像关机）、走出画面、镜头垂下拍到地面等，与拍摄者身份匹配
+**5. Timeline**
+- Total length 10 to 15 seconds, cut into 5 to 7 shots, each shot 2 to 3 seconds, using `00:00–00:02` format
+- Each shot contains three layers: subject action + environmental response (wind, light, animals, passersby) + **one imperfect event**
+- Select imperfect events from the checklist in `references/anti-ai-checklist.md`, and do not repeat the same type across the 7 shots
+- Actions must have a life-logic chain (sitting → walking into an alley → encountering a cat → hanging laundry), not unrelated shot collages
+- **The ending must have a closure method**: sudden cut to black (like powering off), walking out of frame, camera dropping to film the ground, etc., matching the shooter identity
 
-**6. 音频**
-- 先声明模式（仅自然环境音 / 现场收音 + 环境）
-- 罗列6到9个具体声音元素，与场景元素一一对应（有猫就有猫叫，有晾衣绳就有织物声）
-- **三连否定结尾**：没有音乐、没有音效设计、没有旁白（按需调整）
+**6. Audio**
+- First declare the mode (ambient environmental sound only / on-site recording + ambient)
+- List 6 to 9 specific sound elements, corresponding one-to-one with scene elements (if there's a cat, there's a meow; if there's a clothesline, there's fabric rustling)
+- **End with triple negation**: no music, no sound design, no narration (adjust as needed)
 
-**7. 目标**
-- 一句话灵魂锚点，格式："捕捉XX，仿佛一段XX的XX，用4到6个形容词收尾"
-- 这句话是模型在细节冲突时的取舍依据，必须与前面所有段落自洽
+**7. Goal**
+- One-sentence soul anchor, format: "Capture XX, as if a XX's XX, ending with 4 to 6 adjectives"
+- This sentence is the model's basis for trade-offs when details conflict; it must be self-consistent with all preceding sections
 
-### 第三步：自检（输出前必做）
+### Step 3: Self-check (mandatory before output)
 
-对照 `references/anti-ai-checklist.md` 逐条检查：
+Check item by item against `references/anti-ai-checklist.md`:
 
-- [ ] 角色段有一致性锁定句吗？
-- [ ] 地点段排除了商业元素吗？
-- [ ] 摄像段有至少6个物理缺陷描述 + 3个"没有XX"吗？
-- [ ] 时间轴每个镜头都有一个非完美事件吗？有重复吗？
-- [ ] 结尾有收束方式吗？
-- [ ] 音频段的声音元素与画面元素对应吗？
-- [ ] 全文有没有漏进抽象形容词（美丽的、电影感的、高级的）？
-- [ ] 目标句与拍摄者身份/设备/年代自洽吗？
+- [ ] Does the character section have a consistency lock sentence?
+- [ ] Does the location section exclude commercial elements?
+- [ ] Does the camera section have at least 6 physical defect descriptions + 3 "no XX"?
+- [ ] Does every shot in the timeline have an imperfect event? Are there repeats?
+- [ ] Does the ending have a closure method?
+- [ ] Do the audio section's sound elements correspond to visual elements?
+- [ ] Does the full text have any leaked abstract adjectives (beautiful, cinematic, premium)?
+- [ ] Is the goal sentence self-consistent with the shooter identity/equipment/era?
 
-### 第四步：交付
+### Step 4: Delivery
 
-- 输出完整提示词（中文或英文按用户需求，投喂给模型时英文通常效果更稳，可主动提供英文版）
-- 附一段简短说明：这条提示词的"素材来源身份"设定是什么，用户想调整时改哪几个旋钮（设备包、时间段、情绪词、收束方式）
+- Output the complete prompt (in Chinese or English per user need; English typically produces more stable results when fed to the model, so proactively offer an English version)
+- Attach a brief explanation: what is the "footage source identity" setting of this prompt, and which knobs to adjust when the user wants changes (equipment pack, time period, mood words, closure method)
 
-## 参考文件
+## Reference Files
 
-- `references/camera-aesthetics.md`：8种设备/媒介的缺陷参数包，写摄像风格段时必读
-- `references/atmosphere-dictionary.md`：氛围词到具体视觉现象的翻译表，写地点和时间轴时查阅
-- `references/anti-ai-checklist.md`：AI感来源清单、负面约束句库、非完美事件库，自检时必读
+- `references/camera-aesthetics.md`: Defect parameter packs for 9 equipment/media types, must-read when writing the camera style section
+- `references/atmosphere-dictionary.md`: Translation table from mood words to concrete visual phenomena, consult when writing location and timeline
+- `references/anti-ai-checklist.md`: AI-tell source list, negative constraint sentence library, imperfect event library, must-read for self-checking
 
-## 变体处理
+## Variant Handling
 
-- **用户要非写实风格**（动画、赛博朋克、广告片）：七段式结构不变，但摄像段改为对应媒介的美学参数（动画帧率、广告片的运镜语言），负面约束改为排除该风格不要的元素
-- **用户要多角色**：每个角色独立一段描述，各自带一致性锁定句，并在时间轴中明确角色间互动
-- **用户只要优化现有提示词**：先按七段式诊断缺哪些段、哪些段密度不足，给出诊断表再重写
-- **超过15秒的长视频**：建议拆成多条提示词分段生成，每条保持角色段完全一致以维持连续性
+- **User wants non-realistic style** (animation, cyberpunk, commercial): The seven-part structure remains unchanged, but the camera section switches to the corresponding medium's aesthetic parameters (animation frame rate, commercial cinematography language), and negative constraints change to exclude elements unwanted for that style
+- **User wants multiple characters**: Each character gets an independent description block, each with its own consistency lock sentence, and interactions between characters are made explicit in the timeline
+- **User only wants to optimize an existing prompt**: First diagnose which sections are missing or insufficient using the seven-part framework, provide a diagnostic table, then rewrite
+- **Videos longer than 15 seconds**: Recommend splitting into multiple prompts for segment generation, keeping the character section completely identical across segments to maintain continuity

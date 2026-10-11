@@ -1,200 +1,203 @@
 <div align="center">
 
-# 真实视频提示词.skill
+# Realistic Video Prompting .skill
 
-> *把 AI 视频提示词，从“画面描述”升级成“真实素材设计”。*
+> *Elevate AI video prompts from "scene descriptions" to "real footage design."*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Agent Skills](https://img.shields.io/badge/Agent%20Skills-Standard-green)](https://agentskills.io)
-[![Runtime](https://img.shields.io/badge/Runtime-Hermes%20·%20Claude%20·%20Codex%20·%20Cursor-blueviolet)](#安装)
-[![AI Video](https://img.shields.io/badge/AI%20Video-Seedance%20·%20Sora%20·%20Kling%20·%20Runway%20·%20Veo-ff69b4)](#适合什么场景)
+[![Runtime](https://img.shields.io/badge/Runtime-Hermes%20·%20Claude%20·%20Codex%20·%20Cursor-blueviolet)](#installation)
+[![AI Video](https://img.shields.io/badge/AI%20Video-Seedance%20·%20Sora%20·%20Kling%20·%20Runway%20·%20Veo-ff69b4)](#use-cases)
 
 <br>
 
-**一个专门为 AI 视频生成设计的真实感提示词 Skill。**
+**A realism-focused prompt Skill designed for AI video generation.**
 
-它不只帮你写“电影感、高清、光影漂亮”。
-它会先判断这段素材是谁拍的，用什么设备拍的，在哪个年代拍下来的，再把设备缺陷、自然失误、环境声音和时间轴写进提示词。
+It doesn't just help you write "cinematic, high definition, beautiful lighting."
+It first determines who shot the footage, what equipment was used, and in what era it was captured, then bakes equipment defects, natural mishaps, environmental audio, and timeline into the prompt.
 
 <br>
 
-[效果示例](#效果示例) · [安装](#安装) · [它解决什么](#它解决什么) · [工作原理](#工作原理) · [使用方式](#使用方式)
+[Examples](#examples) · [Installation](#installation) · [What It Solves](#what-it-solves) · [How It Works](#how-it-works) · [Usage](#usage)
+
+
+English Translation & Adaptation of [zhouwei713/seedance-prompt](https://github.com/zhouwei713/seedance-prompt)
 
 </div>
 
 ---
 
-## 效果示例
+## Examples
 
-### 纽约街头早晨
+### New York Street Morning
 
-用户输入：
+User input:
 
 ```text
-纽约街头早晨
+New York street morning
 ```
 
-Skill 不会只输出“cinematic morning street, beautiful light”。它会先把这段视频设定成一段有来源的真实素材：
+The Skill doesn't just output "cinematic morning street, beautiful light." It first establishes the video as real footage with a source:
 
 ```text
-2020 年代，一个路人用智能手机竖屏在纽约曼哈顿街角随手拍到的早晨通勤片段。
+2020s, a passerby captured a morning commute snippet on a smartphone in vertical orientation at a Manhattan street corner.
 ```
 
-然后生成结构化视频提示词：
+Then generates a structured video prompt:
 
 ```text
-主要角色：
-一名 30 岁左右的纽约上班族，深灰色羊毛大衣，白色棉质衬衫，黑色直筒长裤，左手拿着纸质咖啡杯，右肩背着黑色通勤包。短发被晨风吹得有几缕贴在额头，脸上有真实皮肤纹理和轻微疲惫感。在整个视频中保持一致的身份、服装、发型和外貌。
+Main Character:
+A New York office worker around 30 years old, dark gray wool coat, white cotton shirt, black straight-leg trousers, holding a paper coffee cup in left hand, black commute bag slung over right shoulder. Short hair with a few strands blown across the forehead by the morning wind, realistic skin texture with a slight look of fatigue. Maintains consistent identity, clothing, hairstyle, and appearance throughout the entire video.
 
-地点：
-清晨 7 点半的纽约曼哈顿街角，人行道边有湿润的柏油路面、黄色出租车、冒着热气的下水井盖、早餐餐车、不锈钢咖啡壶、红绿灯按钮、地铁站楼梯口和刚升起的阳光。
+Location:
+A Manhattan street corner at 7:30 AM, with wet asphalt on the sidewalk, yellow taxis, steaming manhole covers, breakfast carts, stainless steel coffee pots, crosswalk buttons, subway stairwell entrances, and just-risen sunlight.
 
-摄像风格：
-智能手机竖屏拍摄，9:16 竖构图，轻微过度锐化和 HDR 处理感，走路时画面有上下浮动，光线从阴影切到阳光时曝光短暂波动。没有横屏。没有三脚架稳定。没有专业布光。
+Camera Style:
+Smartphone vertical shooting, 9:16 vertical composition, slight over-sharpening and HDR processing feel, up-and-down bobbing while walking, brief exposure fluctuation when light shifts from shadow to sunlight. No horizontal orientation. No tripod stabilization. No professional lighting.
 
-时间轴：
-00:00-00:02 镜头从地铁站出口抬起，先拍到湿润的人行道，再对准街角。
-00:02-00:04 上班族从地铁口走出来，下水井盖冒出的白色蒸汽从他腿边飘过。
-00:04-00:06 他停在斑马线前看红灯，阳光从两栋楼之间落到大衣肩部，曝光突然变亮又恢复。
+Timeline:
+00:00-00:02 Camera lifts from the subway exit, first capturing the wet sidewalk, then panning to the street corner.
+00:02-00:04 The office worker walks out of the subway entrance, white steam from the manhole cover drifting past his legs.
+00:04-00:06 He stops at the crosswalk waiting for the red light, sunlight falling between two buildings onto his coat shoulder, exposure suddenly brightening then recovering.
 ...
 ```
 
-这类提示词会让模型明确素材身份：一段路人手机里真实存在过的城市清晨，而非广告片或旅游宣传片。
+This type of prompt makes the model understand the footage identity: a real city morning that existed on a stranger's phone, not a commercial or tourism promo.
 
 ---
 
-### 韩国老社区日常
+### Korean Old Neighborhood Everyday
 
-用户输入：
-
-```text
-一个韩国老社区，下午，女生走过小巷，想要很真实的家庭录像感
-```
-
-Skill 会切换到 2000 年代消费级 DV 设备包：
+User input:
 
 ```text
-中等数字压缩伪影，褪色的色彩，柔和的对比度，轻微传感器噪点，强烈手持抖动，频繁自动对焦搜索，在阳光和阴影间移动时曝光波动。
-没有稳定。没有电影化的摄像机移动。没有现代色彩分级。
+A Korean old neighborhood, afternoon, a girl walking through an alley, wants a very real home video feel
 ```
 
-它还会在时间轴里加入非完美事件：
+The Skill switches to a 2000s consumer DV equipment pack:
 
 ```text
-00:04-00:06 女生经过晾衣绳，白色衬衫在风里轻轻晃动，镜头稍晚才跟上她的转身。
-00:06-00:08 一只猫从巷口走过，她停下来低头看，自动对焦短暂落到猫身上再回到她的脸。
-00:12-00:14 镜头垂下拍到水泥地和拍摄者鞋尖，然后突然切黑，像摄像机被关掉。
+Moderate digital compression artifacts, faded colors, soft contrast, slight sensor noise, strong handheld shake, frequent autofocus hunting, exposure fluctuation when moving between sunlight and shadow.
+No stabilization. No cinematic camera movement. No modern color grading.
 ```
 
-这类真实感来自缺陷和生活细节，继续堆风格词反而会把画面推回 AI 样片。
+It also adds imperfect events into the timeline:
+
+```text
+00:04-00:06 The girl passes a clothesline, white shirts swaying gently in the wind, the camera lagging slightly behind her turn.
+00:06-00:08 A cat walks past the alley entrance, she stops and looks down at it, autofocus briefly landing on the cat then returning to her face.
+00:12-00:14 The camera drops to film the concrete ground and the shooter's shoe tips, then suddenly cuts to black, as if the camera was turned off.
+```
+
+This kind of realism comes from defects and life details; piling on more style words would only push the image back toward AI demo footage.
 
 ---
 
-## 它解决什么
+## What It Solves
 
-很多 AI 视频 prompt 看起来完整，生成后还是一眼假。
+Many AI video prompts look complete but still look fake at a glance.
 
-常见问题是：
+Common problems:
 
-- 运镜太稳，像自动生成的样片
-- 画面太干净，没有真实设备的缺陷
-- 人物像摆拍，动作没有生活逻辑
-- 场景自动变成广告片、咖啡馆、商业街
-- 音频和画面不对应
-- 镜头之间没有时间推进，只是漂亮画面拼贴
-- 角色跨镜头换脸、换衣服、换发型
+- Camera movement too smooth, like auto-generated demo footage
+- Frames too clean, lacking real equipment defects
+- People look posed, actions lack life logic
+- Scenes automatically become commercials, cafes, shopping streets
+- Audio doesn't correspond to visuals
+- No temporal progression between shots, just a collage of pretty frames
+- Characters change faces, clothes, or hairstyles across shots
 
-真实视频提示词要写清楚素材来源：谁拍的，为什么拍，用什么设备拍，拍摄时发生了哪些小失误。
-
----
-
-## 适合什么场景
-
-- Seedance、Sora、Kling、Runway、Veo 等 text-to-video / image-to-video prompt
-- 真实街拍、家庭录像、DV 怀旧、VHS、Super 8 胶片、手机竖屏、监控录像
-- 城市清晨、社区小巷、旅行随拍、生活片段、纪录片观察
-- 想去掉 AI 视频里过度干净、过度稳定、过度商业调色的创作者
-- 想把一句模糊场景扩展成 10 到 15 秒完整视频提示词的人
-- 需要角色一致性、时间轴、环境声音和负面约束的短视频工作流
+Realistic video prompts must specify the footage source: who shot it, why they shot it, what equipment they used, and what small mishaps occurred during filming.
 
 ---
 
-## 工作原理
+## Use Cases
 
-这个 Skill 会把一个视频想法拆成 7 个部分。
+- Seedance, Sora, Kling, Runway, Veo and other text-to-video / image-to-video prompts
+- Realistic street photography, home video, DV nostalgia, VHS, Super 8 film, vertical phone, surveillance camera
+- City mornings, neighborhood alleys, travel snapshots, slices of life, documentary observation
+- Creators who want to remove the overly clean, overly stable, overly commercial color grading from AI video
+- People who want to expand a vague scene idea into a complete 10-to-15-second video prompt
+- Short video workflows requiring character consistency, timelines, environmental audio, and negative constraints
+
+---
+
+## How It Works
+
+This Skill breaks a video idea into 7 parts.
 
 ```text
-1. 主要角色：谁出现在画面里，外貌和服装如何保持一致
-2. 地点：具体空间、时代元素、光影和环境细节
-3. 视觉风格：真实感层级和素材气质
-4. 摄像风格：设备类型、画面缺陷、操作失误、负面约束
-5. 时间轴：10 到 15 秒内每个镜头发生什么
-6. 音频：现场声音和环境声音如何对应画面
-7. 目标：这段素材最终要像什么
+1. Main Character: Who appears in the frame, how appearance and clothing stay consistent
+2. Location: Specific space, era elements, lighting and environmental details
+3. Visual Style: Realism level and footage temperament
+4. Camera Style: Equipment type, frame defects, operational mishaps, negative constraints
+5. Timeline: What happens in each shot within 10 to 15 seconds
+6. Audio: How on-site and environmental sounds correspond to the visuals
+7. Goal: What this footage should ultimately look like
 ```
 
-它内置三类参考库。
+It has three built-in reference libraries.
 
-### 设备美学缺陷包
+### Equipment Aesthetic Defect Packs
 
-不同设备会产生不同的真实感。
+Different equipment produces different kinds of realism.
 
 ```text
-2000 年代消费级 DV：压缩伪影、褪色、手持抖动、自动对焦搜索
-VHS 家用摄像机：扫描线、色彩溢出、时间戳、低分辨率
-Super 8 胶片：胶片颗粒、暗角、划痕、18fps 卡顿
-智能手机竖屏：9:16、HDR 处理、电子防抖、手指擦过镜头边缘
-监控摄像头：高位俯视、低帧率、时间戳、无声
+2000s consumer DV: compression artifacts, fading, handheld shake, autofocus hunting
+VHS home camcorder: scan lines, color bleeding, timestamps, low resolution
+Super 8 film: film grain, vignetting, scratches, 18fps stutter
+Smartphone vertical: 9:16, HDR processing, electronic stabilization, finger brushing lens edge
+Surveillance camera: high-angle top-down, low frame rate, timestamp, silent
 ```
 
-### 氛围翻译表
+### Atmosphere Translation Table
 
-它会把抽象词翻译成可拍到的现象。
+It translates abstract words into filmable phenomena.
 
 ```text
-温暖：阳光透过树叶、织物微微摇晃、杯口热气、人物拨头发
-孤独：大面积负空间、空旷街道、青白色荧光灯、脚步回声
-紧张：灯管闪烁、走廊阴影、人物频繁回头、远处金属碰撞声
-生活气息：摊贩动作、蒸汽油烟、多人交谈、自行车铃
+Warm: sunlight through leaves, fabric swaying gently, steam from a cup, person tucking hair behind ear
+Lonely: large negative space, empty street, blue-white fluorescent light, echoing footsteps
+Tense: flickering lights, corridor shadows, person frequently looking back, distant metallic clanging
+Lived-in: vendor actions, steam and smoke, overlapping conversations, bicycle bells
 ```
 
-### 去 AI 感自检
+### De-AI Self-Check
 
-输出前检查：
+Check before output:
 
 ```text
-角色是否一致
-地点是否具体
-摄像段是否有物理缺陷
-时间轴是否有非完美事件
-音频是否和画面对应
-有没有混进广告片式运镜和商业调色
+Is the character consistent
+Is the location specific
+Does the camera section have physical defects
+Does the timeline have imperfect events
+Does audio correspond to visuals
+Has commercial-style camera movement and color grading leaked in
 ```
 
 ---
 
-## 安装
+## Installation
 
-### 方式一：安装到 Hermes
+### Method 1: Install to Hermes
 
 ```bash
 git clone https://github.com/zhouwei713/seedance-prompt.git \
   ~/.hermes/skills/creative/realistic-video-prompting
 ```
 
-重启 Hermes，或开启新会话后即可使用：
+Restart Hermes, or start a new session, then use:
 
 ```text
 realistic-video-prompting
 ```
 
-### 方式二：作为通用 Skill 使用
+### Method 2: Use as a General Skill
 
-如果你不使用 Hermes，也可以直接把 `SKILL.md` 放进 Claude、Codex、Cursor、OpenCode 或其他支持 Skill / long prompt 的 Agent 环境里。
+If you don't use Hermes, you can also place `SKILL.md` directly into Claude, Codex, Cursor, OpenCode, or other Agent environments that support Skills / long prompts.
 
-### 方式三：只当提示词方法论参考
+### Method 3: Use as Prompt Methodology Reference
 
-直接阅读：
+Read directly:
 
 ```text
 SKILL.md
@@ -205,29 +208,29 @@ references/anti-ai-checklist.md
 
 ---
 
-## 使用方式
+## Usage
 
-你可以这样说：
+You can say things like:
 
 ```text
-纽约街头早晨，真实手机随拍感，15 秒
+New York street morning, real phone snapshot feel, 15 seconds
 ```
 
 ```text
-韩国老社区，一个女生下午走过小巷，像 2000 年代 DV 家庭录像
+Korean old neighborhood, a girl walking through an alley in the afternoon, like a 2000s DV home video
 ```
 
 ```text
-深夜便利店门口，一个人等车，孤独一点，要监控录像感
+Late night convenience store entrance, someone waiting for a bus, a bit lonely, want surveillance camera feel
 ```
 
 ```text
-帮我把这个视频 prompt 改得更真实，去掉 AI 感
+Help me make this video prompt more realistic, remove the AI feel
 ```
 
 ---
 
-## 仓库结构
+## Repository Structure
 
 ```text
 .
@@ -242,15 +245,15 @@ references/anti-ai-checklist.md
 
 ---
 
-## 设计理念
+## Design Philosophy
 
-真实感不靠多加几个“cinematic”“ultra realistic”“8K”。
+Realism doesn't come from adding more "cinematic," "ultra realistic," "8K."
 
-真实感来自素材身份：谁在拍，拿什么设备拍，拍摄者有没有经验，现场光线和声音怎么变化，镜头里出现了哪些不完美的小事。
+Realism comes from footage identity: who is filming, what equipment they're using, whether the shooter has experience, how the on-site light and sound change, and what small imperfections appear in the frame.
 
-如果不写这些，视频模型会自动补成它最擅长的样子：稳定、干净、对称、商业调色、像样片。
+If you don't write these things, the video model will automatically fill in what it does best: stable, clean, symmetrical, commercially graded, demo-footage-like.
 
-这个 Skill 的价值，是把“真实素材”的判断流程固定下来，让每次生成 AI 视频前都先过一遍设备、年代、空间、动作、声音和失误。
+This Skill's value is in codifying the judgment process for "real footage," so that every AI video generation first passes through equipment, era, space, action, sound, and mishaps.
 
 ---
 

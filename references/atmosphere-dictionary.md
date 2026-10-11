@@ -1,174 +1,174 @@
-# 氛围词到具体现象的翻译表
+# Atmosphere Word to Concrete Phenomena Translation Table
 
-写提示词时禁止直接使用左列的抽象词，必须翻译成右侧的具体视觉、听觉、动作现象。每个氛围至少选3到5个现象组合使用。
-
----
-
-## 温暖 / 治愈 / 亲切
-
-视觉现象：
-- 午后阳光透过树叶在地面投下移动的斑驳光影
-- 晾衣绳上的织物在微风中缓慢摇曳
-- 陶瓷杯口冒出的细微热气
-- 猫或狗慵懒地靠近人
-- 盆栽植物摆在窗台和门口台阶上
-- 人物把头发拨到耳后的小动作
-- 不经意的真诚微笑，随即移开视线
-
-听觉现象：晨间鸟鸣、远处小孩嬉闹声、织物摩擦声、猫叫、勺子碰杯壁
+When writing prompts, do not use the abstract words directly. You must translate them into the concrete visual, auditory, and action phenomena on the right. Select at least 3 to 5 phenomena per mood and use them in combination.
 
 ---
 
-## 怀旧 / 千禧年记忆
+## Warm / Healing / Intimate
 
-视觉现象：
-- 褪色的色彩与柔和的对比度
-- 老式电线杆和架空电线切割天空
-- 墙面斑驳的低层住宅
-- 停在巷口的旧自行车
-- 画面上的日期戳
-- 人物穿着宽松水洗牛仔裤等年代服饰
+Visual phenomena:
+- Afternoon sunlight filtering through leaves, casting shifting dappled shadows on the ground
+- Fabric on a clothesline swaying slowly in a gentle breeze
+- Faint steam rising from the rim of a ceramic cup
+- A cat or dog lazily approaching a person
+- Potted plants placed on windowsills and doorsteps
+- A person's small gesture of tucking hair behind the ear
+- An inadvertent genuine smile, followed by looking away
 
-听觉现象：远处摩托车驶过、老风扇转动声、模拟信号的底噪
-
----
-
-## 孤独 / 疏离
-
-视觉现象：
-- 大面积负空间构图，人物偏居画面一角
-- 空旷街道上唯一移动的身影
-- 荧光灯的青白色调
-- 便利店或地铁站的深夜灯光
-- 人物长时间静止，只有环境在动（车流、雨、霓虹闪烁）
-- 玻璃反光中模糊的人影
-
-听觉现象：空调外机嗡鸣、脚步回声、远处地铁进站声、雨点打在遮阳棚上
+Auditory phenomena: morning birdsong, distant children playing, fabric rustling, cat meowing, spoon tapping cup
 
 ---
 
-## 紧张 / 不安
+## Nostalgia / Millennium Memories
 
-视觉现象：
-- 画面边缘偶尔闯入不明物体或人影
-- 光源不稳定，灯管闪烁
-- 门缝、走廊尽头等纵深阴影
-- 手持镜头呼吸感加重，微微颤抖
-- 人物频繁回头或停顿倾听
+Visual phenomena:
+- Faded colors and soft contrast
+- Old utility poles and overhead wires cutting across the sky
+- Low-rise residential buildings with weathered walls
+- An old bicycle parked at the alley entrance
+- Date stamp on the frame
+- Characters wearing era-specific clothing like loose acid-washed jeans
 
-听觉现象：突然中断的环境音、远处不明的金属碰撞声、自己的呼吸声被收进麦克风
-
----
-
-## 平静 / 冥想
-
-视觉现象：
-- 极缓慢的光线变化（云影掠过整个画面）
-- 水面或窗帘的规律性微动
-- 长镜头，机位几乎不动
-- 人物做重复性动作（浇水、叠衣、剥豆）
-
-听觉现象：风穿过树叶的持续沙沙声、水滴声、远处若有若无的生活声
+Auditory phenomena: distant motorcycle passing by, old fan turning, analog signal floor noise
 
 ---
 
-## 热闹 / 生活气息
+## Lonely / Detached
 
-视觉现象：
-- 前景不断有人或车穿过镜头
-- 摊贩的动作细节（翻炒、找零、擦桌子）
-- 蒸汽、油烟、烤炉的热浪扭曲空气
-- 多层次的动态：近景手部动作、中景人流、远景车流
+Visual phenomena:
+- Large negative space composition, person offset to one corner of the frame
+- A single moving silhouette on an empty street
+- The blue-white tint of fluorescent lighting
+- Late-night lighting from convenience stores or subway stations
+- Person remaining still for long periods, only the environment moving (traffic, rain, neon flickering)
+- Blurred human figure reflected in glass
 
-听觉现象：叫卖声、锅铲碰撞、多人交谈混叠、自行车铃
-
----
-
-## 梦境感 / 记忆感
-
-视觉现象：
-- 过曝的窗户白成一片
-- 胶片颗粒与光晕
-- 镜头短，硬切，时间线跳跃
-- 人物对镜头挥手或大笑但无声
-- 逆光轮廓，面部细节丢失
-
-听觉现象：无声，或只有一层模糊的环境底噪
+Auditory phenomena: air conditioning unit hum, echoing footsteps, distant train arriving, rain hitting awning
 
 ---
 
-## 使用方法
+## Tense / Uneasy
 
-1. 确定用户想要的情绪后，从对应条目选3到5个视觉现象，分配到"地点"段和"时间轴"各镜头中
-2. 听觉现象直接进"音频"段，确保与画面元素一一对应
-4. 同一提示词避免混用冲突氛围（温暖 + 疏离），除非用户明确要情绪转折
-5. 表里没有的氛围，按同样逻辑自行翻译：问自己"这种感觉在现实中由哪些可拍摄的物理现象构成？"
+Visual phenomena:
+- Unidentified objects or figures occasionally intruding at frame edges
+- Unstable light source, flickering fluorescent tubes
+- Deep shadows in door gaps, corridor ends
+- Handheld camera breathing intensified, slight trembling
+- Person frequently looking back or pausing to listen
 
----
-
-## 田园 / 乡愁
-
-**适用**：乡村生活、童年记忆、故乡题材、宫崎骏式夏日田间
-
-视觉现象：
-- 大片稻田或麦田在风中如波浪起伏
-- 人物赤脚踩在湿润泥土或田埂上
-- 荷叶、野花、藤蔓等植物特写
-- 阳光透过树叶在人物脸上流动的光斑
-- 远处农舍的炊烟和黑瓦白墙
-- 蜻蜓点水、蝴蝶停在花上
-- 人物背影渐渐走远，融入田野尽头
-
-听觉现象：连续的蛙鸣和虫鸣、风吹稻田的沙沙声、远处公鸡打鸣、溪流声、脚踏湿泥的柔软声音、竹叶碰撞声
+Auditory phenomena: suddenly interrupted ambient sound, distant unidentifiable metallic clanging, own breathing picked up by microphone
 
 ---
 
-## 夏日 / 炎热
+## Calm / Meditative
 
-**适用**：盛夏题材、暑假记忆、海边、蝉鸣午后
+Visual phenomena:
+- Extremely slow light changes (cloud shadow sweeping across the entire frame)
+- Regular micro-movements of water surface or curtains
+- Long takes, camera nearly stationary
+- Person performing repetitive actions (watering plants, folding clothes, shelling beans)
 
-视觉现象：
-- 树影在地面剧烈晃动，光斑密集而明亮
-- 人物额头和鬓角有细微汗珠
-- 手中冰饮或西瓜表面凝结水珠
-- 风扇叶片或蒲扇的转动
-- 强烈阳光造成的高光过曝和镜头眩光
-- 热空气扭曲远处景物（夏日特有的热浪）
-- 牵牛花、向日葵、荷叶等盛夏植物
-- 偶尔的云影掠过造成短暂阴凉
-
-听觉现象：比任何季节都响亮的蝉鸣、空调外机或风扇的低沉嗡鸣、冰块碰杯的清脆声、远处孩童的嬉笑和泼水声
+Auditory phenomena: continuous rustling of wind through leaves, water drops, faint distant life sounds
 
 ---
 
-## 通勤 / 都市节奏
+## Bustling / Lived-in
 
-**适用**：城市清晨、上班族日常、地铁公交、街角瞬间
+Visual phenomena:
+- People or vehicles constantly crossing the foreground
+- Vendor action details (stir-frying, making change, wiping tables)
+- Steam, cooking smoke, heat waves from ovens distorting the air
+- Multi-layered dynamics: close-up hand actions, mid-ground foot traffic, distant vehicle flow
 
-视觉现象：
-- 密集的人流与单个主体形成对比
-- 从室内到室外/地上到地下的曝光剧烈变化
-- 呼出的白气（秋冬）或额头的汗（盛夏）
-- 低头看手机、翻包找卡、咬住票夹等碎片化动作
-- 车窗玻璃上反射的模糊面容
-- 通勤者独特的身体语言（缩脖子、拉围巾、调整背包肩带）
-- 地铁隧道中快速掠过的灯光管
-
-听觉现象：广播模糊的播报声、列车进站的轰鸣和刹车尖叫、闸机蜂鸣声、脚步匆忙的节奏、车门气动声、隧道风噪声
+Auditory phenomena: hawking calls, spatula clashing, overlapping multi-person conversations, bicycle bells
 
 ---
 
-## 青春 / 慵懒
+## Dreamlike / Memory-like
 
-**适用**：学生时代、午后闲暇、青少年日常、夏日假期
+Visual phenomena:
+- Overexposed windows blown out to white
+- Film grain and halation
+- Short shots, hard cuts, jumping timeline
+- Person waving or laughing at the camera but silent
+- Backlit silhouette, facial detail lost
 
-视觉现象：
-- 漫无目的的闲逛或长时间坐着发呆
-- 手部小动作（拨弄衣角、卷头发、转笔）
-- 靠在墙边、栏杆上，重心随意切换
-- 低头笑、抬头看天、把脸埋进手臂
-- 旧电扇转头吹动刘海和衣领
-- 地面上的影子被拉长，时间缓慢推移
-- 零星对话，说话间隙被环境填满
+Auditory phenomena: silent, or only a layer of blurred ambient floor noise
 
-听觉现象：远处收音机或电视的模糊声音、老旧风扇的转动声、冰棍棒折断声、偶尔的笑声然后继续安静
+---
+
+## Usage
+
+1. After determining the desired mood, select 3 to 5 visual phenomena from the corresponding entry and distribute them across the "Location" section and each shot in the "Timeline"
+2. Auditory phenomena go directly into the "Audio" section, ensuring one-to-one correspondence with visual elements
+4. Avoid mixing conflicting moods within the same prompt (warm + detached) unless the user explicitly wants an emotional shift
+5. For moods not in the table, translate using the same logic: ask yourself "What filmable physical phenomena constitute this feeling in reality?"
+
+---
+
+## Pastoral / Nostalgia
+
+**Applicable to**: rural life, childhood memories, hometown themes, Ghibli-style summer fields
+
+Visual phenomena:
+- Vast rice or wheat fields rippling like waves in the wind
+- Person walking barefoot on wet mud or field ridges
+- Close-ups of lotus leaves, wildflowers, vines
+- Sunlight filtering through leaves, creating shifting light spots on the person's face
+- Distant farmstead cooking smoke and black-tiled white walls
+- Dragonflies skimming water, butterflies resting on flowers
+- Person's back gradually walking away, merging into the edge of the field
+
+Auditory phenomena: continuous frog and insect calls, rustling of wind through rice fields, distant rooster crowing, stream sound, soft sound of feet on wet mud, bamboo leaves clacking
+
+---
+
+## Summer / Heat
+
+**Applicable to**: midsummer themes, summer vacation memories, seaside, cicada-filled afternoons
+
+Visual phenomena:
+- Tree shadows shaking violently on the ground, light spots dense and bright
+- Fine beads of sweat on the person's forehead and temples
+- Condensation droplets on iced drinks or watermelon surfaces
+- Fan blades or palm fans turning
+- Highlight blowout and lens flare from intense sunlight
+- Hot air distorting distant scenery (characteristic summer heat waves)
+- Morning glories, sunflowers, lotus leaves and other midsummer plants
+- Occasional cloud shadows passing to create brief cool shade
+
+Auditory phenomena: cicada buzzing louder than any other season, low hum of AC units or fans, crisp clinking of ice in cups, distant children laughing and splashing
+
+---
+
+## Commute / Urban Rhythm
+
+**Applicable to**: city mornings, office worker routines, subway and bus, street corner moments
+
+Visual phenomena:
+- Dense foot traffic contrasting with a single subject
+- Drastic exposure changes from indoor to outdoor / above-ground to underground
+- Exhaled white breath (autumn/winter) or forehead sweat (midsummer)
+- Fragmented actions like looking down at phone, rummaging bag for card, biting a ticket clip
+- Blurred faces reflected on vehicle window glass
+- Commuter-specific body language (tucking chin, pulling scarf, adjusting backpack strap)
+- Light tubes rapidly streaking past in subway tunnels
+
+Auditory phenomena: muffled broadcast announcements, train arrival rumble and brake screech, turnstile beeps, hurried footsteps, pneumatic door sounds, tunnel wind noise
+
+---
+
+## Youth / Languor
+
+**Applicable to**: student life, afternoon leisure, teenage routines, summer holidays
+
+Visual phenomena:
+- Aimless wandering or sitting zoning out for long periods
+- Small hand movements (fidgeting with hem, twirling hair, spinning pen)
+- Leaning against walls, railings, casually shifting weight
+- Looking down and smiling, looking up at the sky, burying face in arms
+- Old oscillating fan turning to blow bangs and collars
+- Shadows on the ground elongating, time slowly passing
+- Sparse conversation, gaps filled by the environment
+
+Auditory phenomena: faint distant radio or TV sound, old fan turning, popsicle stick snapping, occasional laughter then back to silence

@@ -1,137 +1,137 @@
-# 去AI感清单：AI默认行为、负面约束句库、非完美事件库
+# De-AI Checklist: AI Default Behaviors, Negative Constraint Sentence Library, Imperfect Event Library
 
-## 一、AI视频模型的默认审美（不主动关闭就会出现）
+## I. AI Video Model Default Aesthetics (will appear if not proactively disabled)
 
-| AI默认行为 | 造成的问题 | 对应负面约束句 |
+| AI Default Behavior | Problem Caused | Corresponding Negative Constraint |
 |---|---|---|
-| 电影化平滑运镜（推轨、摇臂感） | 立刻暴露AI感 | 没有电影化的摄像机移动 |
-| 画面稳定如三脚架 | 与手持设定矛盾 | 没有稳定 |
-| 现代商业调色（青橙色调、高对比） | 破坏年代感 | 没有现代色彩分级 |
-| 完美居中构图 | 太"设计"，不像随手拍 | 不完美的构图，构图偏离中心 |
-| 场景里自动加商店、咖啡馆、人群、广告牌 | 破坏安静住宅氛围 | 没有商店、广告、咖啡馆、人群或商业活动 |
-| 自动配背景音乐 | 破坏纪实感 | 没有音乐。没有音效设计。没有旁白 |
-| 人物表演感强、直视镜头摆姿势 | 不像抓拍 | 真实的即兴行为，无剧本的日常生活片段感 |
-| 皮肤过度平滑、磨皮感 | 假人感 | 逼真的皮肤纹理 |
-| 角色跨镜头漂移（换脸、换衣服） | 一致性崩坏 | 在整个视频中保持一致的身份、服装、发型和外貌 |
-| 灯光过于均匀完美 | 摄影棚感 | 自然光，在阳光和阴影间移动时的曝光波动 |
+| Cinematic smooth camera movement (dolly, crane feel) | Instantly exposes AI look | No cinematic camera movement |
+| Frame stable as if on tripod | Contradicts handheld setting | No stabilization |
+| Modern commercial color grading (teal-orange, high contrast) | Destroys era feel | No modern color grading |
+| Perfect centered composition | Too "designed," doesn't look like casual shooting | Imperfect composition, off-center framing |
+| Auto-adds shops, cafes, crowds, billboards to scenes | Destroys quiet residential atmosphere | No shops, ads, cafes, crowds, or commercial activity |
+| Auto-adds background music | Destroys documentary feel | No music. No sound design. No narration |
+| Strong performance feel, staring into camera and posing | Doesn't look candid | Authentic spontaneous behavior, unscripted everyday slice-of-life feel |
+| Over-smooth skin, airbrushed feel | Mannequin look | Realistic skin texture |
+| Character drift across shots (face/clothes change) | Consistency breakdown | Maintains consistent identity, clothing, hairstyle, and appearance throughout the entire video |
+| Lighting too evenly perfect | Studio feel | Natural light, exposure fluctuation when moving between sunlight and shadow |
 
-## 二、非完美事件库（时间轴每镜头选一个，全片不重复）
+## II. Imperfect Event Library (select one per timeline shot, no repeats across the entire piece)
 
-**摄影师的失误**：
-1. 自动对焦反复在主体和前景/背景间切换搜索
-2. 构图偏离中心，因为操作者试图跟上主体
-3. 摄像机稍晚才捕捉到关键瞬间（人已经转身了才对准）
-4. 变焦生硬，推过了又拉回来
-5. 走动跟拍时的强烈晃动和运动模糊
-6. 手指或背带短暂遮挡镜头一角
-7. 镜头努力对焦但短暂失败，画面呼吸
+**Shooter's mistakes**:
+1. Autofocus repeatedly hunting between subject and foreground/background
+2. Framing drifting off-center because the operator tries to keep up with the subject
+3. Camera lagging slightly behind key moments (person already turned before camera catches up)
+4. Zoom too aggressive, pushed too far then pulled back
+5. Strong shake and motion blur during walk-and-follow shooting
+6. Finger or strap briefly covering a corner of the lens
+7. Camera struggling to focus but briefly failing, frame breathing
 
-**环境的介入**：
-8. 一阵微风吹动散落的发丝或衣角
-9. 云影掠过，曝光随之波动
-10. 流浪猫/狗/鸽子闯入画面，主体自然回应
-11. 场外有人打招呼，主体转头回应
-12. 阳光透过树叶在脸上闪烁明灭
-13. 路人从镜头前无意穿过
+**Environmental interventions**:
+8. A gust of wind blowing loose hair or clothing edges
+9. Cloud shadow passing, exposure fluctuating accordingly
+10. Stray cat/dog/pigeon entering the frame, subject responding naturally
+11. Someone off-screen greeting the subject, subject turning to respond
+12. Sunlight filtering through leaves, flickering on/off on the face
+13. Passersby inadvertently crossing in front of the lens
 
-**主体的自然行为**：
-14. 注意到镜头，露出小而真诚的微笑后移开视线
-15. 说话被环境音打断，笑场
-16. 整理头发、拨发到耳后等无意识小动作
-17. 动作做到一半改变主意（伸手拿杯子又先擦了下桌子）
+**Subject's natural behavior**:
+14. Noticing the camera, showing a small genuine smile then looking away
+15. Talking interrupted by ambient sound, breaking into a laugh
+16. Unconscious small gestures like adjusting hair, tucking hair behind ear
+17. Changing mind mid-action (reaching for a cup but wiping the table first)
 
-**收束方式**（结尾必选一个）：
-18. 录制在中途突然切到黑屏，仿佛摄像机关闭了
-19. 主体走出画面，镜头停留在空景两秒
-20. 镜头垂下拍到地面/脚，然后切断
-21. 有人喊拍摄者的名字，镜头晃动着转向声源时切断
+**Closure methods** (must choose one for the ending):
+18. Recording suddenly cuts to black mid-shot, as if the camera was turned off
+19. Subject walks out of frame, camera lingers on empty scene for two seconds
+20. Camera drops to film the ground/feet, then cuts
+21. Someone calls the shooter's name, camera shakes toward the sound source and cuts
 
-## 三、输出前逐条自检
+## III. Item-by-item self-check before output
 
-- [ ] 角色段：全部是可视化特征？零抽象形容词？结尾有一致性锁定句？
-- [ ] 地点段：8个以上具体元素？有光影动态？结尾排除了商业元素？
-- [ ] 视觉风格段：4到6个真实感定义短语？
-- [ ] 摄像段：至少6个物理缺陷现象？结尾至少3个"没有XX"？与设定的设备年代匹配？
-- [ ] 时间轴：5到7个镜头？每镜头三层结构（动作+环境+非完美事件）？非完美事件不重复？动作有生活逻辑链？结尾有收束？
-- [ ] 音频段：声音元素与画面元素一一对应？结尾三连否定？
-- [ ] 目标段：一句话锚点与全篇自洽？
-- [ ] 全文扫一遍：有没有漏网的"美丽""电影感""高级""唯美"等抽象词？
+- [ ] Character section: all visualizable features? Zero abstract adjectives? Ends with a consistency lock sentence?
+- [ ] Location section: 8+ specific elements? Has dynamic lighting? Ends by excluding commercial elements?
+- [ ] Visual style section: 4 to 6 realism-defining phrases?
+- [ ] Camera section: at least 6 physical defect phenomena? Ends with at least 3 "no XX"? Matches the set equipment era?
+- [ ] Timeline: 5 to 7 shots? Each shot has three-layer structure (action + environment + imperfect event)? Imperfect events don't repeat? Actions have life-logic chain? Ending has closure?
+- [ ] Audio section: sound elements correspond one-to-one with visual elements? Ends with triple negation?
+- [ ] Goal section: one-sentence anchor self-consistent with the whole?
+- [ ] Full text scan: any escaped "beautiful," "cinematic," "premium," "gorgeous" abstract words?
 
-## 四、常见翻车模式
+## IV. Common Failure Modes
 
-1. **段落信息串味**：把运镜写进角色段、把音乐写进视觉段。严格分区。
-2. **非完美事件堆太多**：一个镜头塞三个失误，反而假。一镜一个。
-3. **负面约束与正面描述打架**：前面写"没有电影化运镜"，时间轴里又写"缓慢的推轨镜头"。写完交叉检查。
-4. **音画不对应**：画面没有猫，音频写了猫叫。逐项核对。
-5. **时代穿帮**：2000年代DV场景里出现智能手机、共享单车、现代广告屏。检查所有环境元素的年代。
-6. **收束缺失**：视频停在一个"正在进行"的动作上，像被截断的素材而非一段完整的记录。
+1. **Section information bleeding**: Writing camera movement into the character section, writing music into the visual section. Strictly partition.
+2. **Too many imperfect events**: Stuffing three mishaps into one shot makes it fake instead. One per shot.
+3. **Negative constraints fighting positive descriptions**: Writing "no cinematic camera movement" earlier, then "slow dolly shot" in the timeline. Cross-check after writing.
+4. **Audio-visual mismatch**: No cat in the frame but cat meowing in audio. Check item by item.
+5. **Anachronism**: Smartphone, shared bike, or modern ad screen appearing in a 2000s DV scene. Check era of all environmental elements.
+6. **Missing closure**: Video stopping on an "in-progress" action, looking like truncated footage rather than a complete recording.
 
 ---
 
-## 五、进阶技法
+## V. Advanced Techniques
 
-### 场景单元四要素公式（替代"三层结构"的更精确模型）
+### Scene Unit Four-Element Formula (a more precise model replacing the "three-layer structure")
 
-每个时间轴镜头由四层组成，缺一层就会降低真实感：
+Each timeline shot consists of four layers. Missing any one reduces realism:
 
-| 要素 | 功能 | 必须？ |
-|------|------|--------|
-| ① 空间定位 | "在哪"——给一个具体的地点锚点 | 必 |
-| ② 主体动作链 | "干什么"——2到3个连续动作组成行为流（不是单一动作） | 必 |
-| ③ 环境动态 | "环境怎么回应"——风、光、动物、行人的即时变化 | 选 |
-| ④ 摄像机缺陷 | "本次失误"——对焦/构图/抖动/曝光/延迟中的一项 | 必 |
+| Element | Function | Required? |
+|---------|----------|-----------|
+| ① Spatial positioning | "Where" — a specific location anchor | Required |
+| ② Subject action chain | "What" — 2 to 3 consecutive actions forming a behavior flow (not a single action) | Required |
+| ③ Environmental dynamics | "How the environment responds" — immediate changes in wind, light, animals, pedestrians | Optional |
+| ④ Camera defect | "This shot's mishap" — one of focus/composition/shake/exposure/lag | Required |
 
-示例——比较两种写法：
+Example — comparing two ways of writing:
 ```
-❌ 她坐在墙边，风吹动头发。                            ← 信息密度不足，模型自动补的可能是摆拍
-✅ 小房子入口外。她坐在低矮的混凝土墙上，用双手向上举起调整马尾。     ← 有空间定位
-   一阵微风吹动散落的发丝。摄像机努力保持焦点。                     ← 有环境动态+摄像机缺陷
-```
-
-### 2秒节奏法则（时间轴颗粒度控制）
-
-DV式碎片的真实感来自于"短镜头快速推进"的节奏，而非每个镜头拍满全景：
-
-| 总时长 | 建议镜头数 | 每镜头时长 |
-|--------|-----------|-----------|
-| 15秒 | 7个 | 约2秒 |
-| 10秒 | 5个 | 约2秒 |
-| 8秒 | 4个 | 约2秒 |
-| 4到5秒 | 2个 | 约2秒 |
-
-超过3秒的场景会让DV片段感减弱，滑向"精心拍摄"。
-
-### 实时速度检查（DV美学的大忌）
-
-家用DV几乎不会使用慢动作（slow motion）。在时间轴中检查：
-
-```
-❌ 她缓缓转头，发丝在空中慢动作飘过    ← 慢动作，不是DV的行为
-✅ 她转头，发丝被风吹散，画面因快速转头产生运动模糊  ← 实时速度+自然模糊
+❌ She sits by the wall, wind blowing her hair.                    ← Insufficient information density; model may auto-fill with posed footage
+✅ Outside the small house entrance. She sits on a low concrete wall, using both hands to lift and adjust her ponytail.   ← Has spatial positioning
+   A gust of wind blows loose strands of hair. Camera struggles to maintain focus.              ← Has environmental dynamics + camera defect
 ```
 
-唯一例外：如果设备包明确设定为"手机慢动作功能"或"胶片升格拍摄"。
+### 2-Second Rhythm Rule (timeline granularity control)
 
-### 环境交互密度检查
+The realism of DV-style fragmentation comes from the "short shot, rapid progression" rhythm, not each shot being a full wide shot:
 
-真实DV画面的秘密不在于主体多好看，而在于环境对主体的持续"回应"。检查每个镜头中主体与环境之间有多少交互：
+| Total Duration | Recommended Shots | Per-Shot Duration |
+|----------------|-------------------|--------------------|
+| 15 sec | 7 | ~2 sec |
+| 10 sec | 5 | ~2 sec |
+| 8 sec | 4 | ~2 sec |
+| 4-5 sec | 2 | ~2 sec |
 
-```
-低密度：她走在路上。                      ← 主体在空间里，但环境是死背景
-中密度：她走在路上，风吹动裙摆。            ← 环境回应了主体
-高密度：她走在路上，风吹动裙摆和头发，
-        阳光透过树叶在她脸上明灭闪烁，       ← 多个环境要素同时回应
-        她眯了眯眼，调整了草帽的位置。       ← 主体对环境做出二次反应
-```
+Shots exceeding 3 seconds weaken the DV footage feel and slide toward "carefully shot."
 
-目标：每个镜头至少1个环境回应，2个以上更佳。
+### Real-time Speed Check (cardinal sin of DV aesthetics)
 
-### 自动对焦路径指定法
-
-在"摄像风格"段声明自动对焦问题后，在时间轴中每条用到对焦缺陷的镜头上，**明确写出对焦起点和终点**：
+Home DV almost never uses slow motion. Check in the timeline:
 
 ```
-❌ 自动对焦反复搜索         ← 模型理解偏差大
-✅ 自动对焦在她脸部和手中的西瓜之间来回切换  ← 模型知道对焦要在哪两个物体间走
-✅ 自动对焦从背景树影搜到她的后背再拉回远处天空  ← 三态路径，更真实
+❌ She slowly turns her head, hair drifting through the air in slow motion    ← Slow motion, not DV behavior
+✅ She turns her head, hair blown loose by the wind, motion blur from the quick head turn  ← Real-time speed + natural blur
+```
+
+The only exception: if the equipment pack explicitly sets "phone slow-motion feature" or "film overcranked shooting."
+
+### Environmental Interaction Density Check
+
+The secret of real DV footage is not how good-looking the subject is, but the environment's continuous "response" to the subject. Check how many interactions exist between subject and environment in each shot:
+
+```
+Low density: She walks on the road.                      ← Subject is in space, but environment is dead backdrop
+Medium density: She walks on the road, wind blowing her skirt.            ← Environment responded to subject
+High density: She walks on the road, wind blowing her skirt and hair,
+              sunlight flickering through leaves on her face,         ← Multiple environmental elements responding simultaneously
+              she squints and adjusts her sun hat position.           ← Subject makes a secondary response to environment
+```
+
+Goal: at least 1 environmental response per shot, 2+ is better.
+
+### Autofocus Path Specification Method
+
+After declaring autofocus issues in the "Camera Style" section, for each shot in the timeline that uses a focus defect, **explicitly write the focus start and end points**:
+
+```
+❌ Autofocus repeatedly hunting              ← Model interpretation varies widely
+✅ Autofocus switching back and forth between her face and the watermelon in her hand  ← Model knows which two objects to focus between
+✅ Autofocus drifting from distant tree shadows to her back then pulling back to distant sky  ← Three-state path, more realistic
 ```
